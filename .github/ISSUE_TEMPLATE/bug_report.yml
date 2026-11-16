@@ -1,0 +1,38 @@
+name: 🐞 Bug report
+description: Something in ECHO is broken
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks! **Never paste your Gemini API key.** Remove anything personal from logs."
+  - type: input
+    id: echo
+    attributes:
+      label: ECHO version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you playing?
+      options: [Singleplayer, Essential world, LAN, Dedicated server]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what ECHO did instead.
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: The other mods in your folder (a screenshot is fine).
+  - type: textarea
+    id: log
+    attributes:
+      label: latest.log
+      description: Drag in `.minecraft/logs/latest.log` (or a crash report).

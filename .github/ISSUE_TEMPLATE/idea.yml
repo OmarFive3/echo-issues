@@ -1,0 +1,11 @@
+name: 💡 Idea
+description: Something ECHO should do
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should ECHO do, and when?
+    validations:
+      required: true
